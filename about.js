@@ -6,7 +6,8 @@ __SYD.about_page = () =>{
         'div',
         {
             style:"min-height:100vh;height:fit-content;width:100%;display:flex;justify-content:space-around;align-items:center;flex-direction:column;row-gap:4rem;background:unset;padding:10px 10px;",//({method:'add',style:{rowGap:'30px',background:'transparent',flexDirection:'row-reverse',justifyContent:'center', flexWrap:'wrap',columnGap:'10px'}})
-            class:`${__p(['about_page','animate'],false) ? "about_animate" : ""}`
+            class:`${__p(['about_page','animate'],false) ? "about_animate" : ""}`,
+            id:"about"
         },
         [
             // __SYD.text_lib_type_h1_glob({cnt:"Choose Your Apartment Type",size:__p(['about_page','font'],'40px'),clr:'#b99d75',w:'700',inject:"text-align:left;width:100%;padding:5px 15px;padding-left:10px;"}),
