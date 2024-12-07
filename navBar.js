@@ -1,4 +1,4 @@
-import { __c, __g, __p, __SYD, __u, SYD_VAR } from "./sydneyDom_v2.js";
+import { __c, __g, __p, __SYD, __u, __v, SYD_VAR } from "./sydneyDom_v2.js";
 
 __SYD.scaleNav = () =>{
     const check = __p(["subContainer" , "scaled"],false);
@@ -57,8 +57,16 @@ __SYD.scaleNavComponent = () =>{
             style:`padding:10px 0;display:${__p(["subContainer" , "scaled"],false) ? "flex" : "none"};column-gap:40px;list-style-type:none;text-transform:capitalize;color:#fff;`
         },
         [
-            __SYD.ul_lists_el({child:__SYD.pTag({text:"About" , class_:`` , style:"font-size:18px;font-weight:300;font-family:shine;"})}),
-            __SYD.ul_lists_el({child:__SYD.pTag({text:"tokenomics" , class_:`` , style:"font-size:18px;font-weight:300;font-family:shine;"})})
+            __SYD.ul_lists_el({child:__SYD.pTag({text:"About" , function_:{onclick:(() =>{
+                // __v['nav_menu_tog'].click()
+
+                location.href = "#about"
+            })} , class_:`` , style:"font-size:18px;font-weight:300;font-family:shine;"})}),
+            __SYD.ul_lists_el({child:__SYD.pTag({text:"tokenomics" , function_:{onclick:(() =>{
+                // __v['nav_menu_tog'].click()
+
+                location.href = "#toke"
+            })} , class_:`` , style:"font-size:18px;font-weight:300;font-family:shine;"})})
         ]
     )
 }
@@ -73,6 +81,7 @@ __SYD.nav_menu_tog = () =>{
         },[],
         {
             genericStyle:['bg_cover'],
+            type:"nav_menu_tog",
             events:{
                 onclick:(e) =>{
                     const state = __g("scaleNav");
@@ -119,8 +128,16 @@ __SYD.dropDownNavMenu_el = () =>{
             class:"drop_down_menu navDropDown"
         },
         [
-            __SYD.ul_lists_el({child:__SYD.pTag({text:"About" , style:"font-size:22px;font-weight:700;"})}),
-            __SYD.ul_lists_el({child:__SYD.pTag({text:"Tokenomics" , style:"font-size:22px;font-weight:700;"})}),
+            __SYD.ul_lists_el({child:__SYD.pTag({text:"About" , function_:{onclick:(() =>{
+                __v['nav_menu_tog'].click()
+
+                location.href = "#about"
+            })} , style:"font-size:22px;font-weight:700;"})}),
+            __SYD.ul_lists_el({child:__SYD.pTag({text:"Tokenomics" , function_:{onclick:(() =>{
+                __v['nav_menu_tog'].click()
+
+                location.href = "#toke"
+            })} , style:"font-size:22px;font-weight:700;"})}),
             __SYD.ul_lists_el({child:__SYD.pTag({text:"Telegram" , style:"font-size:22px;font-weight:700;"})}),
             // __SYD.ul_lists_el({child:__SYD.pTag({text:"terms" , style:"font-size:22px;font-weight:700;"}) , function_:{onclick:() =>{/*write a function here */ navFunction_get({route:"terms"})}}}),
 
