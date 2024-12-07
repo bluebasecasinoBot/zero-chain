@@ -105,7 +105,7 @@ __SYD.ul_lists_el = ({child , function_ = {}}) =>{
     return __c(
         "li",
         {
-            style:"list-style-type:none;",
+            style:"list-style-type:none;cursor:pointer;",
             // class:"click"
         },
         [
