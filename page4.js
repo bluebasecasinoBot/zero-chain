@@ -5,7 +5,7 @@ __SYD.page4 = () =>{
         "div",
         {
             style:"min-height:100vh;height:fit-content;width:100%;display:flex;justify-content:flex-start;align-items:center;flex-direction:column;row-gap:2.5rem;padding:10px 10px;background-image:url(./assets/toke.png);background-attachment:fixed;",
-            class:`${__p(['page4','animate'],false) ? "toke_animate" : ""}`
+            class:`${__p(['page4','animate'],false) ? "toke_animate" : ""}` , id:"toke"
         },
         [
             __c(
